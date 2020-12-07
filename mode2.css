@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --primary-color: white;
+  --off-white: black;
+  --dark-gray: black;
+
+  --dark-col: black;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
+  background-color: black;
+  overflow-y: scroll;
+}
+
+hr {
+  margin: 2rem 0rem;
+}
+
+/** cover bio**/
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/** spaces **/
+
+.margin-md {
+  margin: 2rem;
+}
+
+/** container **/
+.container {
+  padding: 0rem 1rem;
+}
+
+.container-center {
+  max-width: 800px;
+  margin: auto;
+}
+
+/** links **/
+.link {
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.link-primary {
+  background-color: var(--dark-col);
+  border-radius: 0.5rem;
+  color: white;
+  border: 1px solid var(--primary-color);
+}
+
+.link-secondary {
+  color: var(--primary-color);
+  border-radius: 0.5rem;
+  border: 1px solid var(--primary-color);
+}
+
+/** lists **/
+
+.list-non-bullet {
+  list-style: none;
+  color: antiquewhite;
+}
+
+.list-item-inline {
+  display: inline;
+  padding: 0rem 0.5rem;
+}
+
+/** navigation **/
+
+.navigation {
+  background-color: var(--dark-gray);
+  color: black;
+  padding: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.navigation .nav-brand {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.navigation .nav-pills {
+  text-align: right;
+}
+
+.navigation .link {
+  color: white;
+}
+
+.navigation .link-active {
+  font-weight: bold;
+}
+
+/** header **/
+
+.hero {
+  padding: 2rem;
+  padding-top: 5rem;
+}
+
+.hero .hero-img {
+  max-width: 280px;
+  display: block;
+  margin: auto;
+}
+
+.quiz-img {
+  max-width: 280px;
+  display: block;
+  /* margin: auto; */
+  padding-top: 1.5rem;
+}
+
+.hero .tech-img {
+  max-width: 280px;
+  display: block;
+  margin: auto;
+}
+
+.hero .hero-heading {
+  /* text-align: center; */
+  padding-top: 1.5rem;
+  color: var(--primary-color);
+}
+
+.hero .tech-heading {
+  /* text-align: center; */
+  padding-top: 1.5rem;
+  color: var(--primary-color);
+}
+
+.hero .hero-heading .heading-inverted {
+  color: aliceblue;
+}
+
+.hero .tech-heading .heading-inverted {
+  color: aliceblue;
+}
+
+/** sections **/
+
+.section {
+  padding: 2rem;
+}
+
+.section h1 {
+  text-align: center;
+}
+
+/* .section h2 {
+    text-align: center;
+
+} */
+
+.code-area {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  max-width: 800px;
+  padding: 1rem;
+  background-color: var(--off-white);
+}
+
+blockquote {
+  border-left: 8px solid var(--primary-color);
+  padding-left: 1.3rem;
+  color: antiquewhite;
+}
+
+.ow {
+  background-color: var(--dark-gray);
+}
+
+p {
+  color: antiquewhite;
+}
+
+/** footers **/
+
+.footer {
+  background-color: var(--dark-col);
+  padding: 2rem 1rem;
+  text-align: center;
+  color: white;
+  border-top-right-radius: 1rem;
+}
+
+.footer .link {
+  color: white;
+}
+
+.footer .footer-header {
+  font-weight: bold;
+  font-size: large;
+}
+
+.footer ul {
+  padding-inline-start: 0px;
+}
+
+/* * footer  */
